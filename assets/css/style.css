@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.underlined {
+    position: relative;
+    display: inline-block;
+}
+
+.underlined::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-primary {
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #f39c12;
+    transform: translateY(-2px);
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+#skills h2.underlined {
+    border-bottom: 3px solid #17a2b8;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.skill-card ul li {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.skill-card ul li i {
+    font-size: 1.2rem;
+}
