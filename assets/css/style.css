@@ -113,3 +113,39 @@ img:hover {
 .skill-card ul li i {
     font-size: 1.2rem;
 }
+.contact-links {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.contact-icon {
+    color: #333; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #007bff; /* Change color on hover */
+}
+
+.project-card {
+    height: 100%; /* Make all cards the same height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Prevent image distortion */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    flex-grow: 1; /* Expands to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content evenly */
+}
+
+
